@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link   rel  = "stylesheet"
+                href = "{{url_for('static', filename = 'index.css')}}" >
+        <script src  = "{{url_for('static', filename = 'index.js' )}}" >
+        </script>
+    </head>
+
+    <body>
+        <form action = "/index"  method = "get"  >
+            <button name = "get_value"  value = "Start a Simulation."  > Simulation   </button>
+        </form>
+        <form action = "/index"  method = "post" >
+            <button name = "post_value" value = "Please choose the enviroment."   > Select Robot </button>
+        </form>
+    </body>
+</html>
+

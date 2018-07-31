@@ -1,0 +1,41 @@
+<html lang="ja">
+    <head>
+        <link   rel  = "stylesheet"
+                href = "{{url_for('static',filename='index.css')}}">
+        <script src  = "{{url_for('static',filename='getTime.js')}}">
+        </script>
+    </head>
+</html>
+
+<main>
+    <title> My Page </title>
+    <body id="MyPage">
+
+        <h1>
+            Account Menu
+        </h1>
+
+        <h2>
+           <p id="RealtimeClockArea2">
+        </h2>
+        <br>
+
+        <h2>
+            None
+        </h2>
+
+        <form action = "/login">
+            <button name = "LogOutButton" value = "anpanman" > Log Out </button>
+        </form>
+    </body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/query">
+                    "Query"
+                </a>
+            </li>
+        </ul>
+    </nav>
+</main>

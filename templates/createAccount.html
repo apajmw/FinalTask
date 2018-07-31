@@ -1,0 +1,47 @@
+<html lang="ja">
+    <head>
+        <link   rel  = "stylesheet"
+                href = "{{url_for('static', filename='index.css')}}">
+        <script src  = "{{url_for('static', filename='pass.js'  )}}">
+        </script>
+    </head>
+</html>
+
+<main>
+    <title> My Page </title>
+    <body id="NewAcc">
+
+        <h1>
+            Create a New Account
+        </h1>
+
+        <br>
+
+        <form action='/login/mypage'>
+            <div id="errorMessage"></div>
+
+            <div> <label> Account Name                                           </label></div>
+            <div> <input type="text"                 required                              > </div>
+
+            <div> <label for=pass>    Password                                   </label></div>
+            <div> <input type="password" id="pass"   required                             /> </div>
+
+            <div> <label for=passCon> Password Confirmation                      </label></div>
+            <div> <input type="password" id="passCon"required oninput="CheckPass_2(this)" /> </div>
+
+            <p>   <input type="submit"   id="submit" value="Registrate" >        </p>
+
+        </form>
+    </body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="http://127.0.0.1:8888/login">
+                    "Login Menu"
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</main>
